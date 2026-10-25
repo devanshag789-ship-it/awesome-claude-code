@@ -55,7 +55,7 @@ def get_pushed_at(repo, token=None):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--csv", type=Path, default=CSV_PATH)
-    parser.add_argument("--days", type=int, default=90)
+    parser.add_argument("--days", type=int, default=180)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
